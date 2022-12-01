@@ -1,0 +1,34 @@
+.down {
+    background-color: #004B46;
+    padding: 10px 20px;
+}
+
+.down a {
+    font-size: 80%;
+    color: white;
+}
+
+.cpy {
+    margin-left: 4%;
+}
+
+.follow {
+    margin-right: 4%;
+}
+
+.flw {
+    color: white;
+    text-align: end;
+    margin-top: -34px;
+    font-size: 90%;
+}
+
+/* .flw a{
+
+} */
+
+.flw a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
