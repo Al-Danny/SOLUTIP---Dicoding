@@ -1,21 +1,22 @@
 import React from 'react';
 import { showFormattedDate } from '../../utils/index';
 import PropTypes from 'prop-types';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import '../../style/contentHome.css';
 
 function ConsulItem({ id, antrianke, Nama, description, createdAt }) {
 	return (
-		<article>
-			<div className='description'>
-			<h1>Antrian ke {antrianke}</h1>
-				<h2>
-					<Link to={`/consultation/${id}`}>{Nama}</Link>
-				</h2>
-				<p>{showFormattedDate(createdAt)}</p>
-				<p className=''>{description.slice(0, 100)}...</p>
-			</div>
-		</article>
+		<Link to={`/consultation/${id}`}>
+			<article>
+				<div className='description desc-card-konsul'>
+					<h2>{Nama}</h2>
+					<p>
+						Antrian ke-{antrianke} | {showFormattedDate(createdAt)}
+					</p>
+					<p className=''>{description.slice(0, 100)}...</p>
+				</div>
+			</article>
+		</Link>
 	);
 }
 

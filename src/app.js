@@ -12,16 +12,11 @@ import NewsDetailPage from './pages/newsPage/newsDetailPage';
 import EventPage from './pages/eventPage/eventPage';
 import EventDetailPage from './pages/eventPage/eventDetailPage';
 import ConsulPage from './pages/consulPage/consulPage';
+import ConsulDetailPage from './pages/consulPage/consulDetailPage';
+import ConsulAddPage from './pages/consulPage/consulAddPage';
 import NotfoundPage from './pages/notFoundPage/notFoundPage';
 import AuthedUserContext from '../src/contexts/AuthedUserContext';
 import { getUserLogged, putAccessToken } from './utils/network-data';
-<<<<<<< HEAD
-import EventPage from './pages/eventPage/eventPage';
-import DetailEvent from './pages/eventPage/eventDetailPage';
-import DetailConsul from './pages/consulPage/DetailCnslPage';
-import AddConsul from './pages/consulPage/AddConsulPage';
-=======
->>>>>>> 3232745defd2d893b15545be0a4d333b4a5068fd
 
 function App() {
 	const [authedUser, setAuthedUser] = React.useState(null);
@@ -101,18 +96,12 @@ function App() {
 						<Route path='/*' element={<NotfoundPage />} />
 						<Route path='/home' element={<HomePageAfterLogin />} />
 						<Route path='/consultation' element={<ConsulPage />} />
-						<Route path='/consultation/:id' element={<DetailConsul />} />
+						<Route path='/consultation/:id' element={<ConsulDetailPage />} />
 						<Route path='/news' element={<NewsPage />} />
-<<<<<<< HEAD
-						<Route path='/article/:title' element={<NewsDetails />} />
-						<Route path='/event' element={<EventPage />} />
-						<Route path= '/event/:id' element={<DetailEvent />} />
-						<Route path='/add' element={<AddConsul />} />
-=======
 						<Route path='/article/:title' element={<NewsDetailPage />}></Route>
 						<Route path='/event' element={<EventPage />} />
 						<Route path='/event/:id' element={<EventDetailPage />} />
->>>>>>> 3232745defd2d893b15545be0a4d333b4a5068fd
+						<Route path='/add' element={<ConsulAddPage />} />
 					</Routes>
 				</main>
 				<Footer />
