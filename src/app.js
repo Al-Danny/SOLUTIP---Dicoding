@@ -14,6 +14,7 @@ import RegisterPage from './pages/authPage/RegisterPage';
 import AuthedUserContext from '../src/contexts/AuthedUserContext';
 import { getUserLogged, putAccessToken } from './utils/network-data';
 import EventPage from './pages/eventPage/eventPage';
+import DetailEvent from './pages/eventPage/eventDetailPage';
 
 function App() {
 	const [authedUser, setAuthedUser] = React.useState(null);
@@ -69,8 +70,9 @@ function App() {
 							<Route path='/' element={<HomePageBeforeLogin />} />
 							<Route path='/home' element={<HomePageBeforeLogin />} />
 							<Route path='/news' element={<NewsPage />} />
-							<Route path='/article/:title' element={<NewsDetails />}></Route>
+							<Route path='/article/:title' element={<NewsDetails />} />
 							<Route path='/event' element={<EventPage />} />
+							<Route path= '/event/:id' element={<DetailEvent />} />
 							<Route
 								path='/login'
 								element={<LoginPage loginSuccess={onLoginSuccess} />}
@@ -88,13 +90,14 @@ function App() {
 				<Navbar2 />
 				<main>
 					<Routes>
+						<Route path='/login' element={<HomePageAfterLogin />} />
 						<Route path='/*' element={<NotfoundPage />} />
-						<Route path='/' element={<HomePageAfterLogin />} />
 						<Route path='/home' element={<HomePageAfterLogin />} />
 						<Route path='/consultation' element={<ConsulPage />} />
 						<Route path='/news' element={<NewsPage />} />
 						<Route path='/article/:title' element={<NewsDetails />}></Route>
 						<Route path='/event' element={<EventPage />} />
+						<Route path= '/event/:id' element={<DetailEvent />} />
 					</Routes>
 				</main>
 			</AuthedUserContext.Provider>

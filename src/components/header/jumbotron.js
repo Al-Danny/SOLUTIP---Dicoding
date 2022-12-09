@@ -24,7 +24,7 @@ function Jumbotron() {
 					<div className='fitur'>
 						<ul>
 							<NavLink
-								to='/antrean'
+								to='/login'
 								className='klik-antre'
 								onClick={handleClick}
 							>
