@@ -2,8 +2,9 @@ import React from 'react';
 import Jumbotron from '../../components/header/jumbotron';
 import { Link } from 'react-router-dom';
 import EventsList from '../../components/event/EventsList';
-import NewsOverview from '../../components/news/NewsView';
+import NewsList from '../../components/news/NewsList';
 import { getEventsHome } from '../../utils/event-data';
+import { getNewsHome } from '../../utils/news-data';
 import '../../style/contentHome.css';
 
 class HomePageBeforeLogin extends React.Component {
@@ -12,6 +13,7 @@ class HomePageBeforeLogin extends React.Component {
 
 		this.state = {
 			EventsHome: getEventsHome(),
+			NewsHome: getNewsHome(),
 		};
 	}
 
@@ -36,8 +38,9 @@ class HomePageBeforeLogin extends React.Component {
 							<Link to='/news'>Detail</Link>
 						</p>
 					</div>
-					<NewsOverview />
+					<NewsList news={this.state.NewsHome} />
 				</div>
+				<br />
 			</>
 		);
 	}

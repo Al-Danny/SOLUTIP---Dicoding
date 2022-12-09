@@ -100,6 +100,7 @@ function App() {
 						<Route path= '/event/:id' element={<DetailEvent />} />
 					</Routes>
 				</main>
+				<Footer />
 			</AuthedUserContext.Provider>
 		);
 	};
