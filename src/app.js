@@ -15,6 +15,8 @@ import AuthedUserContext from '../src/contexts/AuthedUserContext';
 import { getUserLogged, putAccessToken } from './utils/network-data';
 import EventPage from './pages/eventPage/eventPage';
 import DetailEvent from './pages/eventPage/eventDetailPage';
+import DetailConsul from './pages/consulPage/DetailCnslPage';
+import AddConsul from './pages/consulPage/AddConsulPage';
 
 function App() {
 	const [authedUser, setAuthedUser] = React.useState(null);
@@ -94,10 +96,12 @@ function App() {
 						<Route path='/*' element={<NotfoundPage />} />
 						<Route path='/home' element={<HomePageAfterLogin />} />
 						<Route path='/consultation' element={<ConsulPage />} />
+						<Route path='/consultation/:id' element={<DetailConsul />} />
 						<Route path='/news' element={<NewsPage />} />
-						<Route path='/article/:title' element={<NewsDetails />}></Route>
+						<Route path='/article/:title' element={<NewsDetails />} />
 						<Route path='/event' element={<EventPage />} />
 						<Route path= '/event/:id' element={<DetailEvent />} />
+						<Route path='/add' element={<AddConsul />} />
 					</Routes>
 				</main>
 				<Footer />

@@ -7,6 +7,7 @@ function ConsulList({ consul }) {
 		<div className='consul-cards'>
 			{consul.map((consult, index) => (
 				<ConsulItem
+					antrianke={consult.antrianke}
 					Nama={consult.Nama}
 					createdAt={consult.createdAt}
 					description={consult.description}

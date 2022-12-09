@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import NewsItem from './NewsItem';
 import '../../style/contentHome.css';
-import gmbr from '../../assets/image/img-lost.png';
+// import gmbr from '../../assets/image/-lost';
 
 const NewsOverview = () => {
 	const [news, setNews] = useState([]);
@@ -19,7 +19,7 @@ const NewsOverview = () => {
 			{news.map((elt, index) => (
 				<NewsItem
 					key={index + elt}
-					image={elt.urlToImage !== null ? elt.urlToImage : gmbr}
+					image={elt.urlToImage}
 					title={elt.title}
 					description={elt.content}
 					date={new Date(elt.publishedAt).toLocaleString('de-DE', {
