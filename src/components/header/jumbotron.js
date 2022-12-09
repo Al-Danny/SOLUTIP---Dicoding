@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import img from '../../assets/image/img-hero.png';
-import antre from '../../assets/image/img-antre.png';
 import konsul from '../../assets/image/img-konsultasi.png';
 import '../../style/jumbotron.css';
 
@@ -23,19 +22,6 @@ function Jumbotron() {
 					</p>
 					<div className='fitur'>
 						<ul>
-							<NavLink
-								to='/login'
-								className='klik-antre'
-								onClick={handleClick}
-							>
-								<li>
-									<div className='pic antre'>
-										<img src={antre} alt='' />
-									</div>
-									<p>Antrean</p>
-								</li>
-							</NavLink>
-
 							<NavLink
 								to='/login'
 								className='klik-konsultasi'
