@@ -1,19 +1,17 @@
-import React, { useState } from "react";
-import { useParams } from "react-router";
-import EventsDetail from "../../components/event/EventsDetail";
-import {
-  getEvents
-} from "../../utils/event-data.js";
+import React, { useState } from 'react';
+import { useParams } from 'react-router';
+import EventsItemDetail from '../../components/event/EventsItemDetail';
+import { getEvents } from '../../utils/event-data.js';
 
-function DetailEvent () {
-  const { id } = useParams();
-  const [Event_Detail] = useState(getEvents(id));
+function EventDetailPage() {
+	const { id } = useParams();
+	const [Event_Detail] = useState(getEvents(id));
 
-  return (
-    <>
-      <EventsDetail {...Event_Detail} />
-    </>
-  )
+	return (
+		<>
+			<EventsItemDetail {...Event_Detail} />
+		</>
+	);
 }
 
-export default DetailEvent;
+export default EventDetailPage;

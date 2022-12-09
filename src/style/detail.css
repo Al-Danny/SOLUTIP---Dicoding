@@ -1,14 +1,17 @@
 .detail-article {
 	width: 100%;
 	margin: auto;
-	padding: 0px 100px;
+	padding: 0px 200px;
 }
 
 .detail-article p {
 	font-size: 14px;
+	text-align: justify;
 }
 
 .detail-article img {
 	width: 100%;
+	background-size: contain;
+	height: 500px;
 	margin: auto;
 }

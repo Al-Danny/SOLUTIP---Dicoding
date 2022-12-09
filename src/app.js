@@ -1,20 +1,20 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/authPage/LoginPage';
+import RegisterPage from './pages/authPage/RegisterPage';
+import HomePageBeforeLogin from './pages/homePage/homePageBeforeLogin';
+import HomePageAfterLogin from './pages/homePage/homePageAfterLogin';
 import Navbar from '../src/components/header/navbar';
 import Navbar2 from './components/header/navbar2';
 import Footer from '../src/components/footer/footer';
 import NewsPage from './pages/newsPage/newsPage';
-import NewsDetails from './components/news/NewsDetail';
+import NewsDetailPage from './pages/newsPage/newsDetailPage';
+import EventPage from './pages/eventPage/eventPage';
+import EventDetailPage from './pages/eventPage/eventDetailPage';
 import ConsulPage from './pages/consulPage/consulPage';
 import NotfoundPage from './pages/notFoundPage/notFoundPage';
-import HomePageBeforeLogin from './pages/homePage/homePageBeforeLogin';
-import HomePageAfterLogin from './pages/homePage/homePageAfterLogin';
-import LoginPage from './pages/authPage/LoginPage';
-import RegisterPage from './pages/authPage/RegisterPage';
 import AuthedUserContext from '../src/contexts/AuthedUserContext';
 import { getUserLogged, putAccessToken } from './utils/network-data';
-import EventPage from './pages/eventPage/eventPage';
-import DetailEvent from './pages/eventPage/eventDetailPage';
 
 function App() {
 	const [authedUser, setAuthedUser] = React.useState(null);
@@ -70,9 +70,9 @@ function App() {
 							<Route path='/' element={<HomePageBeforeLogin />} />
 							<Route path='/home' element={<HomePageBeforeLogin />} />
 							<Route path='/news' element={<NewsPage />} />
-							<Route path='/article/:title' element={<NewsDetails />} />
+							<Route path='/article/:title' element={<NewsDetailPage />} />
 							<Route path='/event' element={<EventPage />} />
-							<Route path= '/event/:id' element={<DetailEvent />} />
+							<Route path='/event/:id' element={<EventDetailPage />} />
 							<Route
 								path='/login'
 								element={<LoginPage loginSuccess={onLoginSuccess} />}
@@ -95,9 +95,9 @@ function App() {
 						<Route path='/home' element={<HomePageAfterLogin />} />
 						<Route path='/consultation' element={<ConsulPage />} />
 						<Route path='/news' element={<NewsPage />} />
-						<Route path='/article/:title' element={<NewsDetails />}></Route>
+						<Route path='/article/:title' element={<NewsDetailPage />}></Route>
 						<Route path='/event' element={<EventPage />} />
-						<Route path= '/event/:id' element={<DetailEvent />} />
+						<Route path='/event/:id' element={<EventDetailPage />} />
 					</Routes>
 				</main>
 				<Footer />

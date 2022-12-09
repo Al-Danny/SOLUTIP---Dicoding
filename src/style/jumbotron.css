@@ -5,6 +5,7 @@ header {
 	padding: 60px;
 	text-align: center;
 	background-color: rgb(242, 255, 253);
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
 .img-header {
