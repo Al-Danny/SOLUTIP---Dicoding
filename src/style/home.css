@@ -1,0 +1,26 @@
+li {
+	list-style: none;
+}
+
+img {
+	max-width: 300px;
+	max-height: 300px;
+	border-radius: 8px;
+}
+
+.title {
+	margin-left: 40px;
+}
+
+.date {
+	margin-left: 40px;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.title_content {
+	margin-left: 40px;
+}

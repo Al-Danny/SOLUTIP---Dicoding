@@ -1,0 +1,14 @@
+.detail-article {
+	width: 100%;
+	margin: auto;
+	padding: 0px 100px;
+}
+
+.detail-article p {
+	font-size: 14px;
+}
+
+.detail-article img {
+	width: 100%;
+	margin: auto;
+}

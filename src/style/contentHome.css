@@ -1,0 +1,61 @@
+/* homePage */
+
+.menu-event {
+	width: 100%;
+	margin: auto;
+	padding: 5px 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.menu-event p {
+	text-align: right;
+}
+
+/* newsPage & eventPage */
+.cards {
+	width: 100%;
+}
+
+.cards h1 {
+	text-align: center;
+}
+
+.news-cards,
+.event-cards,
+.consul-cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 0px 30px;
+	width: 100%;
+}
+
+article {
+	margin: auto;
+	margin-bottom: 20px;
+	width: 95%;
+	background-color: rgb(0, 136, 136);
+	color: azure;
+	border-bottom-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+article img {
+	margin: 0px;
+	width: 100%;
+	border-top-right-radius: 30px;
+}
+
+.description {
+	margin: 0px 20px;
+}
+
+.description a {
+	margin: 5px;
+	padding: 5px 10px;
+	background-color: #ed0875;
+	color: white;
+	border-radius: 5px;
+}
+
+/* eventPage */

@@ -1,0 +1,100 @@
+/* login */
+
+.login {
+	display: flex;
+}
+
+.form-login {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+.form-login a {
+	color: #ed0875;
+}
+
+.img-login {
+	width: 50%;
+	margin: auto;
+}
+
+.img-login img {
+	margin: auto;
+	margin-left: 140px;
+	width: 80%;
+}
+
+.login-input {
+	margin: auto;
+}
+
+.login-input input {
+	width: 55%;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 4px;
+	border: none;
+	border-bottom-style: groove;
+	border-bottom-color: rgb(177, 255, 255);
+}
+
+.login-input button {
+	width: 55%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #ed0875;
+	border-radius: 4px;
+	border: none;
+	color: white;
+}
+
+/* register */
+.register {
+	display: flex;
+}
+
+.form-regist {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+.form-regist a {
+	color: #ed0875;
+}
+
+.img-register {
+	width: 50%;
+	margin: auto;
+}
+
+.img-register img {
+	margin: auto;
+	margin-left: 140px;
+	width: 80%;
+}
+
+.register-input {
+	margin: auto;
+}
+
+.register-input input {
+	width: 55%;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 4px;
+	border: none;
+	border-bottom-style: groove;
+	border-bottom-color: rgb(177, 255, 255);
+}
+
+.register-input button {
+	width: 55%;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: #ed0875;
+	border-radius: 4px;
+	border: none;
+	color: white;
+}
