@@ -102,3 +102,16 @@ a {
 .nav-icon {
 	display: none;
 }
+
+.button-logout {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	background: none;
+	margin: auto;
+	border: none;
+	color: white;
+	font-size: 16px;
+	padding: 6px 0px;
+	font-family: 'Poppins', sans-serif;
+}
