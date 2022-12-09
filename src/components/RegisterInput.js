@@ -61,12 +61,14 @@ class RegisterInput extends React.Component {
 					value={this.state.name}
 					onChange={this.onNameChange}
 				/>
+				<br />
 				<input
 					type='email'
 					placeholder='Email'
 					value={this.state.email}
 					onChange={this.onEmailChange}
 				/>
+				<br />
 				<input
 					type='password'
 					placeholder='Password'
@@ -74,6 +76,7 @@ class RegisterInput extends React.Component {
 					value={this.state.password}
 					onChange={this.onPasswordChange}
 				/>
+				<br />
 				<button>Register</button>
 			</form>
 		);
