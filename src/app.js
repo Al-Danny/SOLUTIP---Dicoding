@@ -6,7 +6,7 @@ import Footer from '../src/components/footer/footer';
 import NewsPage from './pages/newsPage/newsPage';
 import NewsDetails from './components/news/NewsDetail';
 import ConsulPage from './pages/consulPage/consulPage';
-import NotfoundPage from './pages/notFoundPage/NotFoundPage';
+import NotfoundPage from './pages/notFoundPage/notFoundPage';
 import HomePageBeforeLogin from './pages/homePage/homePageBeforeLogin';
 import HomePageAfterLogin from './pages/homePage/homePageAfterLogin';
 import LoginPage from './pages/authPage/LoginPage';

@@ -19,7 +19,7 @@ function LoginPage({ loginSuccess }) {
 		<>
 			<div className='login'>
 				<div className='img-login'>
-					<img src={imgLogin} />
+					<img src={imgLogin} alt='' />
 				</div>
 				<div className='form-login'>
 					<h1>Login</h1>

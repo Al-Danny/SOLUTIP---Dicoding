@@ -13,7 +13,7 @@ function Jumbotron() {
 		<>
 			<header>
 				<div className='img-header'>
-					<img src={img} />
+					<img src={img} alt='' />
 				</div>
 				<div className='hero-content'>
 					<h1>SOLUSI MEDIS TERPERCAYA</h1>
@@ -30,7 +30,7 @@ function Jumbotron() {
 							>
 								<li>
 									<div className='pic antre'>
-										<img src={antre} />
+										<img src={antre} alt='' />
 									</div>
 									<p>Antrean</p>
 								</li>
@@ -43,7 +43,7 @@ function Jumbotron() {
 							>
 								<li>
 									<div className='pic'>
-										<img src={konsul} />
+										<img src={konsul} alt='' />
 									</div>
 									<p>Konsultasi</p>
 								</li>

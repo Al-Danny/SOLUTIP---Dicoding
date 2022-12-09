@@ -18,7 +18,7 @@ function ConsulList({ consul }) {
 	);
 }
 
-ConsulList.PropTypes = {
+ConsulList.propTypes = {
 	eventss: PropTypes.arrayOf(PropTypes.object),
 };
 

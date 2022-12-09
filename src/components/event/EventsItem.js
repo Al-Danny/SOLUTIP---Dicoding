@@ -6,7 +6,7 @@ import '../../style/contentHome.css';
 function EventsItem({ image, title, createdAt, description }) {
 	return (
 		<article>
-			<img src={image} />
+			<img src={image} alt={title} />
 			<div className='description'>
 				<h2>{title}</h2>
 				<p>{showFormattedDate(createdAt)}</p>

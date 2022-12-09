@@ -14,7 +14,7 @@ function RegisterPage() {
 		<>
 			<div className='register'>
 				<div className='img-register'>
-					<img src={imgRegist} />
+					<img src={imgRegist} alt='' />
 				</div>
 				<div className='form-regist'>
 					<h1>Register</h1>

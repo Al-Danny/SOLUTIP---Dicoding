@@ -19,7 +19,7 @@ function EventsList({ events }) {
 	);
 }
 
-EventsList.PropTypes = {
+EventsList.propTypes = {
 	eventss: PropTypes.arrayOf(PropTypes.object),
 };
 
