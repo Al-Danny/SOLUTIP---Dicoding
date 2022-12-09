@@ -23,8 +23,6 @@ header {
 }
 
 .fitur ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
 	list-style-type: none;
 	margin: auto;
 	margin-top: 40px;
@@ -93,10 +91,7 @@ header {
 	.img-header {
 		display: none;
 	}
-	.fitur ul {
-		grid-template-columns: 1fr;
-		width: 100%;
-	}
+
 	.fitur ul li {
 		margin: 10px auto;
 	}
