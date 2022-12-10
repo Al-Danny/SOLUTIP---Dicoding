@@ -16,7 +16,6 @@
 	margin: auto;
 }
 
-<<<<<<< HEAD
 
 /* konsultasi */
 
@@ -29,10 +28,6 @@
 	padding:20px;
 }
 
-=======
-/* konsultasi */
-
->>>>>>> 4c825c559519c554c913d781b8794dfcd981618c
 .detail-consult {
 	display: grid;
 	grid-template-columns: 1fr 2fr;
@@ -67,8 +62,5 @@
 	font-size: 14px;
 	text-align: justify;
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 4c825c559519c554c913d781b8794dfcd981618c

@@ -6,8 +6,6 @@ import Footer from '../src/components/footer/footer';
 import NewsPage from './pages/newsPage/newsPage';
 import NewsDetails from './components/news/NewsDetail';
 import ConsulPage from './pages/consulPage/consulPage';
-import ConsulDetailPage from './pages/consulPage/consulDetailPage';
-import ConsulAddPage from './pages/consulPage/consulAddPage';
 import NotfoundPage from './pages/notFoundPage/notFoundPage';
 import HomePageBeforeLogin from './pages/homePage/homePageBeforeLogin';
 import HomePageAfterLogin from './pages/homePage/homePageAfterLogin';
@@ -15,13 +13,10 @@ import LoginPage from './pages/authPage/LoginPage';
 import RegisterPage from './pages/authPage/RegisterPage';
 import AuthedUserContext from '../src/contexts/AuthedUserContext';
 import { getUserLogged, putAccessToken } from './utils/network-data';
-<<<<<<< HEAD
 import EventPage from './pages/eventPage/eventPage';
 import DetailEvent from './pages/eventPage/eventDetailPage';
 import DetailConsul from './pages/consulPage/DetailCnslPage';
 import AddConsul from './pages/consulPage/AddConsulPage';
-=======
->>>>>>> 4c825c559519c554c913d781b8794dfcd981618c
 
 function App() {
 	const [authedUser, setAuthedUser] = React.useState(null);
@@ -101,19 +96,12 @@ function App() {
 						<Route path='/*' element={<NotfoundPage />} />
 						<Route path='/home' element={<HomePageAfterLogin />} />
 						<Route path='/consultation' element={<ConsulPage />} />
-						<Route path='/consultation/:id' element={<ConsulDetailPage />} />
+						<Route path='/consultation/:id' element={<DetailConsul />} />
 						<Route path='/news' element={<NewsPage />} />
-<<<<<<< HEAD
 						<Route path='/article/:title' element={<NewsDetails />} />
 						<Route path='/event' element={<EventPage />} />
 						<Route path= '/event/:id' element={<DetailEvent />} />
 						<Route path='/add' element={<AddConsul />} />
-=======
-						<Route path='/article/:title' element={<NewsDetailPage />}></Route>
-						<Route path='/event' element={<EventPage />} />
-						<Route path='/event/:id' element={<EventDetailPage />} />
-						<Route path='/add' element={<ConsulAddPage />} />
->>>>>>> 4c825c559519c554c913d781b8794dfcd981618c
 					</Routes>
 				</main>
 				<Footer />
