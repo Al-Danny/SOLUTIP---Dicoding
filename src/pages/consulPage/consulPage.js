@@ -3,6 +3,7 @@ import ConsulList from '../../components/consultation/ConsulList';
 import { getActiveConsul } from '../../utils/konsul-data';
 import { Link } from "react-router-dom";
 import { FaPlus } from "react-icons/fa";
+import '../../style/detail.css';
 class ConsulPage extends React.Component {
 	constructor(props) {
 		super(props);

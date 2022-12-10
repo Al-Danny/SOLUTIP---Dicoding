@@ -12,6 +12,55 @@
 .detail-article img {
 	width: 100%;
 	background-size: contain;
-	height: 500px;
+	height: 700px;
 	margin: auto;
 }
+
+
+/* konsultasi */
+
+.action{
+	background: none;
+	border:none;
+	position:sticky;
+	font-size: 30px;
+	margin:auto;
+	padding:20px;
+}
+
+.detail-consult {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin: auto;
+	padding: 30px;
+}
+
+.detail-kiri {
+	margin: auto;
+	border-right: groove;
+}
+
+.detail-kiri img {
+	width: 50%;
+	margin: auto;
+	margin-left: 25%;
+}
+
+.detail-kiri h1 {
+	text-align: center;
+	font-size: 25px;
+	margin: auto;
+	font-weight: 900;
+}
+
+.detail-kanan {
+	margin: auto;
+	padding: 60px;
+}
+
+.detail-kanan p {
+	font-size: 14px;
+	text-align: justify;
+}
+
+

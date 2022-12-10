@@ -5,18 +5,17 @@ function ConsulInput({
   value,
   handleChange,
   type = "text",
-  placeHolder,
   className,
-  name,
+  Nama,
 }) {
   return (
     <input
       type={type}
       value={value}
       onChange={(e) => handleChange(e)}
-      placeholder={placeHolder}
+      placeholder= 'masukkan nama'
       className={className}
-      name={name}
+      name={Nama}
       autoComplete="off"
     />
   );
@@ -28,7 +27,7 @@ ConsulInput.propTypes = {
   type: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   className: PropTypes.string,
-  name: PropTypes.string,
+  Nama: PropTypes.string,
 };
 
 export default ConsulInput;

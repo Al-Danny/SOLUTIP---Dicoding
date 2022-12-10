@@ -106,3 +106,53 @@
 	border: none;
 	color: white;
 }
+
+
+/* add */
+.add {
+	display: flex;
+}
+
+.form-add {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	font-size: 14px;
+}
+
+.form-add a {
+	color: #ed0875;
+}
+
+.add-input {
+	margin: auto;
+	margin-left: 500px;
+}
+
+.add-input input {
+	width: 50%;
+	margin: 10px auto;
+	padding: 10px;
+	border-radius: 4px;
+	border: none;
+	font-size: 14px;
+	border-bottom-style: groove;
+	border-bottom-color: rgb(177, 255, 255);
+}
+
+.desc {
+	width: 50%;
+	border-bottom-color: rgb(177, 255, 255);
+}
+
+.add-input button {
+	width: 50%;
+	margin: 10px auto;
+	padding: 18px;
+	font-size: 14px;
+	font-weight: 600;
+	background-color: #ed0875;
+	border-radius: 4px;
+	border: none;
+	color: white;
+}

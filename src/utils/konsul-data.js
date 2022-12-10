@@ -79,7 +79,7 @@ function addConsul({ antrianke, Nama, description}) {
     ...consultation,
     {
       id: `consultation-${+new Date()}`,
-      antrianke: antrianke || "eror hapus dan ambil antrian",
+      antrianke: antrianke+new Date() || "nothing antrian",
       Nama: Nama || "(untitled)",
       description,
       createdAt: new Date().toISOString(),

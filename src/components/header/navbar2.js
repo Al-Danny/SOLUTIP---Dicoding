@@ -43,10 +43,14 @@ function Navbar2() {
 						</li>
 						<li id='autentifikasi'>
 							{authedUser ? (
-								<button className='button-logout' onClick={onLogout}>
+								<NavLink
+									to='/'
+								>
+									<button className='button-logout' onClick={onLogout}>
 									{authedUser.name}
 									<BiExit />
 								</button>
+								</NavLink>
 							) : (
 								''
 							)}

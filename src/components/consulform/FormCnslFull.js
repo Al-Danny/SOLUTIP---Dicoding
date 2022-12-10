@@ -1,36 +1,43 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CnslAntreAdd from "./ConsulAntre";
-import CnslNameAdd from "./ConsulName";
+import ConsulInput from "./ConsulInput";
 import CnslInputDsc from "./ConsulDesc";
 import { BiCheckShield } from "react-icons/bi";
 
-function FormCnslFull ({ handleSubmit, description, Nama, antrianke, handleInput, handleClick }) {
+function FormCnslFull ({ 
+  handleSubmit, 
+  Name, 
+  handleChange, 
+  description, 
+  handleInput,
+}) {
   return (
-    <div className="">
-      <section className="">
-        <form onSubmit={handleSubmit}>
-          <CnslAntreAdd handleClick={handleClick} antrianke={antrianke}/>
-          <CnslNameAdd handleInput={handleInput} Nama={Nama}/>
-          <CnslInputDsc handleInput={handleInput} description={description} />
-            <div className="">
+        <form onSubmit={handleSubmit} className='add-input'>
+          <h1>Masukkan Sambatmu :)</h1>
+          <ConsulInput
+            value={Name}
+            handleChange={handleChange}
+            placeholder="masukkan nama"
+            name="title"
+            className=""
+            type="text"
+            /><br/>
+            <CnslInputDsc handleInput={handleInput} description={description} /><br/>
+              <div className="add-new-page__action">
                 <button className="action" type="submit">
                     <BiCheckShield />
                 </button>
             </div>
         </form>
-      </section>
-    </div>
-  )
+  );
 }
 
 FormCnslFull.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
-  description: PropTypes.string,
-  Nama: PropTypes.string,
-  antrianke: PropTypes.string,
+  Name: PropTypes.string,
+  handleChange: PropTypes.func.isRequired,
+  description: PropTypes.string.isRequired,
   handleInput: PropTypes.func.isRequired,
-  handleClick: PropTypes.func.isRequired,
-} 
+}
 
 export default FormCnslFull;

@@ -12,7 +12,7 @@ function AddConsul () {
   const handleSubmit = (e) => {
     e.preventDefault();
     addConsul({ antrianke, Nama, description });
-    navigate("/");
+    navigate("/consultation");
   };
   return (
     <div className>

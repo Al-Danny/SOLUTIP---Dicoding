@@ -2,18 +2,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { showFormattedDate } from "../../utils/index";
+import '../../style/detail.css';
 
 function EventsDetail({ image, title, createdAt, description }) {
   return (
-    <>
-        <section className="">
-          <img src={image} />
-          <h3 className="">{title}</h3>
-          <p className="">{showFormattedDate(createdAt)}</p>
-          <div className="">{description}</div>
-        </section>
-    </>
-  )
+		<>
+			<div className='detail-article'>
+				<h1 className=''>{title}</h1>
+				<p className=''>{showFormattedDate(createdAt)}</p>
+				<img src={image} alt='' />
+				<p>{description}</p>
+			</div>
+		</>
+	);
 }
 
 EventsDetail.propTypes = {

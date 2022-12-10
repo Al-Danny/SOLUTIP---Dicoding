@@ -65,7 +65,7 @@ a {
 
 #autentifikasi {
 	list-style: none;
-	margin-left: 48rem;
+	margin-left: 28rem;
 	background-color: #ed0875;
 	border-radius: 8px;
 	padding: 5px 25px;
@@ -114,4 +114,14 @@ a {
 	font-size: 16px;
 	padding: 6px 0px;
 	font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width:1186px) {
+	.nav-menu{
+		margin-left:30px;
+	}
+
+	#autentifikasi{
+		margin-left: 20rem;
+	}
 }

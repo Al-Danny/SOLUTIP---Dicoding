@@ -21,7 +21,7 @@ function ConsulItem({ id, antrianke, Nama, description, createdAt }) {
 
 ConsulItem.propTypes = {
 	antrianke: PropTypes.string.isRequired,
-	nama: PropTypes.string.isRequired,
+	Nama: PropTypes.string.isRequired,
 	createdAt: PropTypes.string,
 	description: PropTypes.string.isRequired,
 	id: PropTypes.string.isRequired,

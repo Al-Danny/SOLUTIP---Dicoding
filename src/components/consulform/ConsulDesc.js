@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 function CnslInputDsc({ handleInput, description }) {
   return (
     <div
-      className=""
-      data-placeholder="Masukkan Keluhan..."
+      type="text"
+      className="desc"
+      placeholder="Masukkan Keluhan..."
+      contentEditable
       onInput={handleInput}
       value={description}
     ></div>
@@ -18,3 +20,4 @@ CnslInputDsc.propTypes = {
 };
 
 export default CnslInputDsc;
+
